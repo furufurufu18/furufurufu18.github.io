@@ -12,17 +12,17 @@
                 <select id="isbn" name="isbn">
                 <option value="">お寿司のネタを選択してください。</option>
                 <option value="1">マグロ</option>
-                <option value="2">サーモン</option>
+                <option value="salmon">サーモン</option>
                 <option value="3">えんがわ</option>
                 </select>
-            </form>
+        </form>
             <img src="salmon1.jpg" alt="">
  <script>
                 document.addEventListener('DOMContentLoaded',function(){
-                 document.getElementById('osusi').addEventListener('chang',function(){
-        
+                document.getElementById('osusi').addEventListener('change',function(){
+                location.href = 'https://furufurufu18.github.io'+ this.value;
             },false);
-                },false);
+        },false);
 </script> 
 </body>
 </html>
