@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>メソッドの使い方</title>
 </head>
 <body>
-    <a>asasa</a>
+        <form>
+                <select id="osusi" name="osusi">
+                <option value="">好きなのを選んでください。</option>
+                <option value="maguro.html">マグロ</option>
+                <option value="salmon.html">サーモン</option>
+                <option value="engawa.html">えんがわ</option>
+                <option value="octcat.html">オクトキャット</option>
+                <option value="images.html">お気に入りの画像</option>
+                <option value="showUserAgent.html">ブラウザの判定</option>
+                <option value="inputbox.html"/>タイマー</option>
+                <option value="mesodd.html"/>メソッドの使い方</option>
+                <option value="consoleOBJ.html"/>consoleオブジェクト</option>
+             </select>
+        </form>
+    <h1>メソッドの使い方！</h1>
+    <hr><h2>~window.open()~</h2><hr>
+    <h3>説明</h3>
+    <p>window.open( url, name, features )は新しい副ブラウザウィンドウを生成し、参照されているリソースをロードします。<br> 
+       第２引数「name」に指定したウィンドウやフレームに、第１引数「URL」に指定したドキュメントを読み込むメソッドです。<br> 
+       第３引数「features」にウィンドウの表示スタイルを指定できます。
+       <p>＜ コードはこちらです ＞</p>
+       <pre>
+       <h3>
+               &lt;form><br>
+               &lt;input type="button" value="お気に入りの画像！" onclick="window.open('https://furufurufu18.github.io/image.html')"><br>
+               &lt;/form><br>
+       </h3>
+       </pre>
+
+    <p>次に、、、
+    <br>
+    <hr><h2>~window.close()~</h2><hr>
+    <h3>説明</h3>
+    <p>window.close()は、ウィンドウを閉じるメソッドです('ω')
+            <p>サンプルで試してみましょう。</p>
+            <form>        
+                        <input type="button" value="サンプル" onclick="subwindow1()">
+             </form>
+             <p>＜ コードはこちらです ＞</p>
+             <pre>
+                 <h3>
+                    &lt;input type="button" value="サンプルを閉じる" onclick="window.close()">
+                 </h3>
+             </pre>
+    <p>続きまして、、、</p>
+
+    <hr><h2>~window.focus()~</h2><hr>
+    <h3>説明</h3>
+        <p>focusメソッドは、指定したウィンドウにフォーカスをあてます。 <br>
+           ウィンドウが重なっている場合には、指定したウィンドウが前面へ移動します。
+        </p>
+        <p>＜ コードはこちらです ＞</p>
+        <p id="choi">JavaScriptの場合↓↓↓↓↓</p>
+        <pre>
+            <h3>
+                    &lt;function sampleOpenWindow() {
+                        sampleWindow = window.open( 'samplef.html', 'sample', 'width=300,height=300' );
+                        sampleWindow.focus();}
+                    &lt;/script>
+            </h3>
+        </pre>
+        <p id="choi">HTMLの場合↓↓↓↓↓</p>
+        <pre>
+            <h3>
+                    &lt;div class="sample">
+                    &lt;button onclick="sampleOpenWindow()">サンプル&lt;/button>
+                    &lt;/div>
+            </h3>
+        </pre>
+        <h2>以上になります。。</h2>
+    
+    
+        
+        
+
 </body>
 </html>
