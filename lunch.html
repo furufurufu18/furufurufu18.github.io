@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Sample3</title>
+<style>
+    table{
+        display: inline-block;
+        text-align: left;
+        
+    }
+</style>
+<script>
+    function Sample3(){
+        for(var i = 0;i<Sample3_form.radio.length;i++){
+            if(Sample3_form.radio[i].checked == true){
+                var hoge = Sample3_form.radio[i].value;
+                var hage="";
+
+                var oo = Sample3_form.check[0].checked;
+                var han = Sample3_form.check[1].checked;
+                var zyo = Sample3_form.check[2].checked;
+
+                if(oo == true){
+                    hage = hage + "大盛、";
+                }
+                if(han == true){
+                    hage = hage + "半チャーハン、";
+                }
+                if(zyo == true){
+                    hage = hage + "餃子、";
+                }
+                alert(hoge + "、"　+ hage + "ですね？");
+            }
+        }
+    }
+</script>
+</head>
+ 
+<body>
+    <h1>ランチメニュー</h1>
+
+    <table border="1">
+    <form name="Sample3_form" action="form_sample3.html">
+        <tr>
+        <th><p>ご注文は何でしょう？</p>
+        <input type="radio" name="radio" value="蒙古タンメン"/>蒙古タンメン<br>
+        <input type="radio" name="radio" value="一楽ラーメン"/>一楽ラーメン<br>
+        <input type="radio" name="radio" value="節骨ラーメン"/>節骨ラーメン<br></th>
+        </tr>
+    </table>
+
+         <table border = "1">
+             <tr>
+             <th><p>オプションはいかがですか？</p>
+            <input type="checkbox" name="check"/>大盛<br>
+            <input type="checkbox" name="check"/>チャーシュー飯</tr>
+            <input type="checkbox" name="check"/>半チャーハン<br>
+            <input type="checkbox" name="check"/>餃子<br>
+             </tr>
+    </table>
+    
+         <br>   
+                <input type="button" value="注文する" onclick="Sample3()">
+</from>
+    
+    
+
+</body>
+</html>
