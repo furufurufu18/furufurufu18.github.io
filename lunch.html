@@ -59,11 +59,19 @@
             }
             // 書き込み
 	document.cookie = hoge + hage + ";max-age=10;path=/" ;
+    time = setInterval("count()",120000);
+         
           }
         }else{
             alert("お客様は注文済みです。" + "\n" + document.cookie + "です。" + "\n" + "少々お待ちください。");
         }
     }
+    function count() {
+                alert("へいっ！お待ちどう！");
+                clearInterval(time);
+
+                }
+
        
 
     
