@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Document</title>
+    <style>
+        .toTop {
+  margin-top: 500px;
+  display: inline-block;
+  background: rgb(240, 61, 195);
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+}
+.deleteBox {
+  border: #ccc 1px solid;
+  padding: 10px;
+}
+.deleteBox .delete {
+  cursor: pointer;
+  color: rgb(245, 53, 165);
+  margin-top:10px;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+}
+h2{
+            text-align: left;
+
+            background: rgba(2555,0,0,.2);
+            
+            border-left: solid 20px rgba(225, 0, 255, 0.3);
+}
+body {
+    background-color:rgb(214, 205, 205) 
+}
+
+
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        
+            $(function(){
+                $('a img').hover(function(){
+    $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+  }, function(){
+    if (!$(this).hasClass('currentPage')) {
+      $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+    }
+            });
+        });
+
+        //区切り
+
+        $(function(){
+  $('.toTop').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+
+       //区切り
+
+$(function () {
+    $(".deleteBox .delete").click(function(){
+        $(this).parents(".deleteBox").animate({ opacity: "hide" }, "slow"); 
+    });
+});
+
+
+        
+       </script>
+</head>
+<body>
+    <h1>jQuery</h1>
+    
+    <h2>1.マウスオーバーで画像を変更</h2>
+    <p>〇画像にカーソルを合わせると文字が切り替わる仕組みになっています。</p>
+    <a href="#">
+            <img src="http://webcreatorbox.com/sample/images/btn_sample_off.jpg" alt="btn_sample_off" width="196" height="47" />
+          </a>
+    <p>〇いろんなサイトなどで目にする機能なので、覚えておいて間違いないです。
+    <br>
+    <h2>2.表示内容を閉じる</h2>
+　　<div class="deleteBox">
+           
+             <p>★エラー表示など消してしまいたいもの('ω')(*'ω'*)★</p>
+        　　  <p class="delete">[ 閉じるよ！ ]</p>
+              </div>
+              <p>〇いらなくなったものを綺麗サッパリ無くしたい人にお勧めの機能です。</p>
+              <br>
+              <h2>3.ページトップに戻る</h2>
+              　 <p>〇ページトップにスクロールする機能です。</p>
+              <p>↓下へ</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p>↓</p>
+              <p class="toTop">ページトップに戻るよ！</p>
+
+
+    
+</body>
+</html>
