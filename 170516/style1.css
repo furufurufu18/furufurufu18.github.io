@@ -1,0 +1,25 @@
+@media screen and (min-width: 769px)
+{
+
+    .contents{
+        flex-direction:  row;
+        align-items:  stretch;
+    }
+}
+
+.header{
+    background-color: orangered;
+}
+.footer{
+    background-color: slateblue;
+}
+.contents{
+    display:flex;
+    flex-direction:column;
+}
+.nav{
+    background-color: limegreen;
+}
+.main{
+    background-color:dodgerblue;
+}

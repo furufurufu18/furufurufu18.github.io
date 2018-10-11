@@ -1,0 +1,14 @@
+.wrap{
+    display: flex;
+    background:#ccc;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    margin:5px;
+    border:1px solid;
+    width: 200px;
+    height: 75px;
+    background-color: gold;
+}

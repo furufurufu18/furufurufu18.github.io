@@ -1,0 +1,16 @@
+.accordion2 {text-align: center;}
+.accordion2 .inner {display: none;}
+.accordion2 p{cursor: pointer; padding: 10px;}
+.accordion2 p.ac1{background: #F50057;}
+.accordion2 p.ac2{background: #FFEA00;}
+.accordion2 p.ac3{background: #64DD17;}
+.accordion2 .inner li{padding: 10px 0;}
+.accordion2 .inner li.content1-1{background: #F48FB1;}
+.accordion2 .inner li.content1-2{background: #F8BBD0;}
+.accordion2 .inner li.content1-3{background: #FCE4EC;}
+.accordion2 .inner li.content2-1{background: #FFF59D;}
+.accordion2 .inner li.content2-2{background: #FFF9C4;}
+.accordion2 .inner li.content2-3{background: #FFFDE7;}
+.accordion2 .inner li.content3-1{background: #C5E1A5;}
+.accordion2 .inner li.content3-2{background: #DCEDC8;}
+.accordion2 .inner li.content3-3{background: #F1F8E9;}

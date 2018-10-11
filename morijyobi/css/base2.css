@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+      position: fixed;
+      z-index: 10;
+      width: 100%;
+      height:90px;
+      background: white;
+      border-top: 4px solid blue;
+}
+
+.inner{
+     max-width: 980px;
+     margin: auto;
+     padding-top: 22px;
+}
+
+#nav {
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  #nav li {
+    width: 140px;
+    text-align: center;
+    background-color: none;
+    float: right;
+    margin-top: 5px;
+    
+  }
+  
+  #nav li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
+
+
+main{
+    max-width: 980px;
+    margin: auto;
+}
+
+main h2{
+   text-align: center;
+}
+
+main h2 img{
+    max-width: 100%;
+}
+
+.movie{
+     z-index: 0;
+     background: #000;
+     width: 100%;
+     height: 400px;
+     text-align: center;
+     padding-top: 100px;
+  }
+  
+  .taiken1{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+
+.taiken2{
+    width: 300px;
+    height: 400px;
+    background:　white;
+}
+
+.tokuten1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tokuten2{
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  border-right: 3px dotted blue;
+}
+
+.tokuten2:last-child{
+    border-right: 0px;
+}
+
+.tokuten2 p{
+
+   text-align: left;
+}
+
+.flow{
+
+    max-width: 980px;
+    margin: auto;
+}
+
+.flow2 h3{
+
+     margin-top: -75px;
+     margin-left: 100px;
+}
+
+.flow2 p{
+
+    margin-left: 100px;
+    margin-top:  -10px;
+}
+
+.ques{
+    max-width: 980px;
+    margin:auto;
+}
+
+.ques p{
+    font-weight: boid;
+    font-size:  26px;
+}
+
+.qanda span{
+    padding-right: 20px;
+
+}
+
+.ques .ai{
+    color: blue;
+}
+
+.ques .ue{
+    color: red;
+}
+
+.kkkk{
+    text-align: center;
+
+}
+
+.kyanpus {
+    font-size: 40px;
+    color: blue
+}
+
+.wey {
+
+     font-size: 28px;
+}
+
+.sey {
+
+    font-size: 17px;
+    margin-top: -35px;
+}
+
+.hou{
+
+    font-size: 30px;
+    margin-top: -23px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background:grey;
+    
+}
